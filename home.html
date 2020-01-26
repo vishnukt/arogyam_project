@@ -13,12 +13,14 @@
 </head>
 
 <body>
-    <center>
-       <h2>Login Successful</h2>
-       <form action="#">
+    <div class="container" id="container">
+	<div class="form-container sign-in-container">
+		<form action="#">
+			 <h2>Login Successful</h2>
         <button id="signout">Sign Out</button>
-    </form>
-    </center>
+		</form>
+	</div>
+    </div>
     <script src="script/script.js"></script>
     <script>
         firebase.auth().onAuthStateChanged(function(user)
