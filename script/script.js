@@ -31,7 +31,7 @@ var firebaseConfig = {
   });
 
   googlesignin=()=>{
-      base= new firebase.auth.GoogleAuthProvider();
+      base= new firebase.auth.GoogleAuthProvider()
       firebase.auth().signInWithPopup(base).then(function(result)
       {
           console.log("Successful");
