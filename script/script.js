@@ -31,7 +31,7 @@ var firebaseConfig = {
   });
 
   googlesignin=()=>{
-      base= firebase.auth.GoogleAuthProvider()
+      base= new firebase.auth.GoogleAuthProvider()
       firebase.auth().signInWithPopup(base).then(function(result)
       {
           console.log("Successful");
@@ -40,7 +40,7 @@ var firebaseConfig = {
           console.log(error.code);
           console.log(error.message);
           window.alert("Message : "+error.message);
-      });
+      })
   }
 
   $("#signout").click(function()
