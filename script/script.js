@@ -40,7 +40,7 @@ var firebaseConfig = {
           console.log(error.code);
           console.log(error.message);
           window.alert("Message : "+error.message);
-      });
+      })
   }
 
   $("#signout").click(function()
